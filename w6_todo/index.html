@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <title>W6 Todo List</title>
+  </head>
+  <body>
+    <header>
+      <div class="date"></div>
+      <h1 class="heading">TODO LIST</h1>
+    </header>
+    <main>
+      <div class="todo">
+        <div class="list"></div>
+        <div class="addToDo">
+          <form class="formToDo">
+            <label class="formStyleInput">
+              <input type="text" name="name" placeholder="Add your todo" />
+              <input type="submit" name="submit" value="Add" />
+            </label>
+          </form>
+
+          <div class="filters">
+            <div class="taskCount">
+              <p>Number of Tasks: <span id="activeCount"></span></p>
+            </div>
+            <button class="buttons" id="filterAll">All</button>
+            <button class="buttons" id="filterActive">Active</button>
+            <button class="buttons" id="filterComplete">Completed</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy2022 Jessica Reece</footer>
+  </body>
+  <script src="js/ls.js" type="module"></script>
+  <script src="js/todo.js" type="module"></script>
+  <script src="js/utilities.js" type="module"></script>
+</html>
