@@ -85,3 +85,27 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //map - use 2 maps, squareroot and then times
 // const num = ages.map((age) => Math.sqrt(age)).map((age) => age * 2);
 // console.log(num);
+
+//sort - take two params and then compare them. Sort by start date
+// const sortedCompanies = companies.sort(function (c1, c2) {
+//   if (c1.start > c2.start) {
+//     return 1;
+//   } else {
+//     return -1;
+//   }
+// });
+// console.log(sortedCompanies);
+
+//sort - written in a shorter form
+// const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+// console.log(sortedCompanies);
+
+//sort - ages ascending
+// const sortedAges = ages.sort((a, b) => a - b);
+// console.log(sortedAges);
+
+//sort - ages decending
+// const sortedAges = ages.sort((a, b) => b - a);
+// console.log(sortedAges);
+
+//reduce
