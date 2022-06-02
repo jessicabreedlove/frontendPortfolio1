@@ -1,3 +1,5 @@
+//tutorial https://www.youtube.com/watch?v=rRgD1yVwIvE
+
 const companies = [
   { name: 'Company One', category: 'Finance', start: 1981, end: 2003 },
   { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
@@ -27,14 +29,59 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //   console.log(company.name);
 // });
 
-//for loop used to filter ages
-let canDrink = [];
-for (let i = 0; i < ages.length; i++) {
-  if (ages[i] <= 21) {
-    canDrink.push(ages[i]);
-  }
-}
-
-console.log(canDrink);
+//for loop used to filter ages 21 and older
+// let canDrink = [];
+// for (let i = 0; i < ages.length; i++) {
+//   if (ages[i] >= 21) {
+//     canDrink.push(ages[i]);
+//   }
+// }
+// console.log(canDrink);
 
 //filter
+// const canDrink = ages.filter(function (age) {
+//   if (age >= 21) {
+//     return true;
+//   }
+// });
+// console.log(canDrink);
+
+//filter with arrow function
+// const canDrink = ages.filter((age) => age >= 21);
+// console.log(canDrink);
+
+//filter retail companies
+// const retailCompanies = companies.filter(
+//   (company) => company.category == 'Retail'
+// );
+// console.log(retailCompanies);
+
+//filter all companies from the 80's
+// const fromEighties = companies.filter(
+//   (company) => company.start >= 1980 && company.start < 1990
+// );
+// console.log(fromEighties);
+
+//filter all companies that lasted at least 10 years
+// const lastedTenPlus = companies.filter(
+//   (company) => company.end - company.start >= 10
+// );
+// console.log(lastedTenPlus);
+
+//map - create a new array of company names
+// const companyNames = companies.map((company) => company.name);
+// console.log(companyNames);
+
+//map -  create new array of  name with start and end year
+// const companyInfoMap = companies.map(
+//   (company) => `Name: ${company.name} [${company.start} - ${company.end}]`
+// );
+// console.log(companyInfoMap);
+
+//map - get age and square root it
+// const ageSquare = ages.map((age) => Math.sqrt(age));
+// console.log(ageSquare);
+
+//map - use 2 maps, squareroot and then times
+// const num = ages.map((age) => Math.sqrt(age)).map((age) => age * 2);
+// console.log(num);
