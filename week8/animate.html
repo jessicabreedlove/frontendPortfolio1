@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 8 - Transform, Transition and Animate</title>
+    <style>
+      .parent {
+        background-color: hsla(200, 100%, 20%);
+        height: 400px;
+        width: 400px;
+      }
+
+      .child {
+        background-color: red;
+        height: 50%;
+        width: 50%;
+      }
+
+      .parent:hover .child {
+        transform: translateX(100%);
+        animation: left-to-right 1s ease-in forwards 3 alternate 3s;
+        /* write animation where you want it to happen. first param is name, then transform time, then transform type, then forwards or backwards, then number of times to repeat, direction, delay*/
+        /* animation play state - running or paused. Cool */
+      }
+
+      @keyframes left-to-right {
+        0% {
+          transform: translateX(0);
+        }
+        33% {
+          transform: translateY(100%);
+        }
+        66% {
+          transform: translateY(100%) translateX(100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

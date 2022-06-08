@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 8 - Transform, Transition and Animate</title>
+    <style>
+      .box {
+        background-color: hsl(200, 70%, 30%);
+        width: 100px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+
+      .rotateBox {
+        transform: rotate(35deg);
+        /* usually just use rotate, can say degrees or turns */
+      }
+
+      .scaleBox {
+        transform: scale(2);
+        /* make bigger or smaller. 2 values- x, y, one value - both x & y */
+      }
+
+      .translateBox {
+        /* move an object back, forth, up, down , z */
+        /* one value default moves x (can do negative or positive). 2 values - x, y.  Center things based on their own width*/
+        transform: translate(50%);
+      }
+
+      .skewBox {
+        transform: skew(30deg, -40deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- transform property lets you translate, rotate, scale and/or skew any element on the page -->
+      <!-- Transitions allow the values of CSS properties to change over time, essentially providing simple animation -->
+      <!-- CSS animations, unlike transitions, allow you to control each step of an animation via keyframes -->
+      <!-- most z properties are useful for 3D stuff -->
+    </header>
+    <main>
+      <div class="box rotateBox">Box</div>
+      <div class="box scaleBox">Box</div>
+      <div class="box translateBox">Box</div>
+      <div class="box skewBox">Box</div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

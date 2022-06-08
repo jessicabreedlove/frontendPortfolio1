@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 8 - Transform, Transition and Animate</title>
+    <style>
+      .parent {
+        background-color: hsla(200, 100%, 20%);
+        height: 400px;
+        width: 400px;
+      }
+
+      .child {
+        background-color: red;
+        height: 50%;
+        width: 50%;
+        transition: transform 1s;
+        /* apply to all , or in this case, apply to transform, then specify length of time */
+        /* when adding a transition add it to the child - use inspect to see lots of options */
+      }
+
+      .parent:hover .child {
+        transform: translateX(100%);
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
