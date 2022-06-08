@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geolocation, Offline Web Apps, and Web Storage</title>
+    <style>
+      .ad4 {
+        position: relative;
+      }
+
+      .no-geolocation .ad4 {
+        display: none;
+      }
+
+      .ad4 h1 {
+        font-size: 20px;
+        font-family: AcknowledgementMedium;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header></header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- Geolocation allows your visitors to share their current location. With that location information, you can display it on a map using a maps library such as Google Maps or the MapQuest API. -->
+      <article class="ad-ad4">
+        <div id="mapDiv">
+          <h1>Where in the world are you?</h1>
+          <form id="geoForm">
+            <input type="button" id="geobutton" value="Tell us!" />
+          </form>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <!-- two kinds of web storage : session storage and local storage -->
+    </footer>
+
+    <script src="/week8/geolocation.js"></script>
+    <!-- google maps API-->
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=API_KEY"
+    ></script>
   </body>
 </html>
