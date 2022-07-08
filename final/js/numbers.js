@@ -1,6 +1,8 @@
 // jquery is the bomb
-export function randNum() {
+function randNum() {
   $.get('http://numbersapi.com/random/', function (data) {
     $('#randomMath').text(data);
   });
 }
+
+randNum();
