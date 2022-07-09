@@ -1,6 +1,10 @@
 const myProjects = [
   { label: 'Project 1 - Story Editor ', url: 'week1/story_editor.html' },
   { label: 'Project 2 - Todo List ', url: 'w6_todo/index.html' },
+  {
+    label: 'Project 3 - Random Image & Fact Generator',
+    url: 'final/index.html',
+  },
 ];
 myProjects.forEach(listItem);
 
