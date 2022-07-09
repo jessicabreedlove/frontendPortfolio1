@@ -10,3 +10,6 @@ function randImg(randomPic) {
 }
 
 randImg(randomPic);
+
+// let genRandBtn = document.getElementById('genRandBtn');
+// genRandBtn.addEventListener('click', 'window.location.reload()');
