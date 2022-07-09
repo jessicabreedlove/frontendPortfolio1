@@ -1,2 +1,24 @@
 @media only screen and (min-width: 64rem) {
+  .randImg {
+    max-width: 600px;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #8b959b;
+    justify-content: space-evenly;
+  }
+
+  .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    border: 2px solid #151c20;
+  }
 }
