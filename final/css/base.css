@@ -78,6 +78,13 @@ header {
   align-items: center;
 }
 
+.randFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
 #randomMath {
   margin: 0 0;
   font-family: 'Bitter', serif;
@@ -93,12 +100,15 @@ header {
 }
 
 #genRandBtn {
-  padding: 2px;
-  justify-self: center;
+  padding: 5px;
+  background-color: #151c20;
+  color: white;
+  text-align: center;
+  width: 25%;
+  font-family: 'Bungee Inline', cursive;
+  border-radius: 20px;
 }
 
 .randImg {
-  max-width: 90%;
-  max-height: 70%;
-  overflow: clip;
+  object-fit: cover;
 }

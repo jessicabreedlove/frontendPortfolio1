@@ -6,7 +6,7 @@
 let randomPic = document.getElementById('randomPic');
 function randImg(randomPic) {
   randomPic.innerHTML =
-    '<img class="randImg" src="https://source.unsplash.com/random/">';
+    '<img class="randImg" src="https://source.unsplash.com/random/550x550/">';
 }
 
 randImg(randomPic);
